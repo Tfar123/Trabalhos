@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    
+    <div class="header-container">
+       
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Logo-lojas-centauro.jpg" alt="Logo da Loja" class="logo">
+        
+        <button class="login-button" onclick="toggleLoginModalADM()">Login Admin</button>
+        <button class="login-button" onclick="toggleLoginModal()">Login </button>
+    </div>
+    
+    <!-- Menu de navegação -->
+    <nav class="menu">
+        <a href="index.html">Menu</a>
+        <a href="#contato">Contatos</a>
+        <a href="#sobre">Sobre Nós</a>
+    </nav>
+</header>
+
+<!-- Modal de Login Admin -->
+<div id="loginModalADM" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="toggleLoginModalADM()">&times;</span>
+        <h2>Login Admin</h2>
+        <form>
+            <label for="login">Usuário:</label>
+            <input type="text" id="loginADM" name="login" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senhaADM" name="senha" required>
+            <input type="submit" onclick="logarAdm(); return false">
+           
+        </form>
+    </div>
+</div>
+
+
+<!-- Login Normal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="toggleLoginModal()">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <label for="login">Usuário:</label>
+            <input type="text" id="login" name="login" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <input type="submit" onclick="logar(); return false">
+           
+        </form>
+    </div>
+</div>
+<main>
+<!-- Pagina de promoção -->
+    <section id="novidades">
+        <h2>Novidades</h2>
+        <p>Black November</p><br>
+        <h2>Promoções</h2>
+        <p>Descontos exclusivos para você.</p>
+    </section>
+    <section id="promocoes">
+        <img src="C:\Users\55419\Desktop\SiteADS\img\calca_jeans.jpg" alt="calça jeans"><br>
+        <img src="C:\Users\55419\Desktop\SiteADS\img\camisa_preta.jpeg" alt="Camisa Preta"> 
+        <img src="C:\Users\55419\Desktop\SiteADS\img\moletom.jpeg" alt="Moletom"><br>
+    </section>
+    
+    <!-- Sobre o site -->
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma loja comprometida com estilo e qualidade. 
+            
+            Acreditamos que a moda é uma extensão da identidade, e nossa missão é oferecer peças que não só reflitam tendências, mas também proporcionem estilo e conforto para o dia a dia. Desde nossa fundação, buscamos a combinação perfeita entre qualidade, sustentabilidade e design diferenciado, para que cada cliente possa expressar sua personalidade com confiança.
+            
+            Nossa História
+            Fundada em 2024, a começou como um sonho de criar uma loja de roupas que valorizasse tanto a moda quanto o bem-estar dos nossos clientes. Ao longo dos anos, expandimos nossa linha de produtos para incluir desde peças casuais a looks mais sofisticados, sempre mantendo um padrão de qualidade e atenção aos detalhes que nos diferencia.
+            
+            Nosso Compromisso
+            Para nós, a moda vai além de vestir — é sobre criar uma experiência. Por isso, estamos comprometidos com:
+            
+            Sustentabilidade: trabalhamos com fornecedores que compartilham nossa preocupação com o meio ambiente, usando materiais eco-friendly sempre que possível.
+            Qualidade: cada peça é cuidadosamente selecionada e confeccionada para garantir durabilidade e conforto.
+            Inclusividade: acreditamos que a moda é para todos. Oferecemos uma gama diversa de tamanhos, estilos e opções para que todos possam se sentir bem em nossas roupas.
+            Nossa Equipe
+            Nossa equipe é formada por profissionais apaixonados pela moda e comprometidos em oferecer um atendimento personalizado. Desde estilistas e designers até o pessoal de atendimento, todos compartilham o mesmo objetivo: fazer com que cada cliente tenha uma experiência excepcional, tanto em nossas lojas físicas quanto online.
+            
+            Venha nos Visitar!
+            Estamos sempre prontos para ajudar você a encontrar o look perfeito para qualquer ocasião. Visite-nos em nossa loja física ou explore nossas coleções online. Se precisar de ajuda, nossa equipe de atendimento ao cliente está aqui para ajudar a responder suas perguntas e guiá-lo em sua jornada de moda.
+            
+            Porque vestir-se bem é sentir-se bem.
+            </p>
+    </section>
+</main>
+<footer id="contato">
+    <h4>Nossos contatos</h4>
+    <ol> Telefone:(41) 4002-8922</ol>
+    <ol> E-mail: centaurocontato@gmail.com</ol>
+    <ol> Instagram: @centauro_oficial</ol>
+    <ol>&copy; 2024 Centauro. Todos os direitos reservados.</ol>
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>

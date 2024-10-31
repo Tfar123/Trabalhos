@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <div class="header-container">
+            
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    
+            <h1 class="header-title">Relatórios</h1>
+    
+   
+            <button class="login-button" onclick="toggleLoginModal()">Login</button>
+        </div>
+        
+        <!-- Menu de navegação -->
+        <nav class="menu">
+            <a href="index.html">Menu</a>
+            <a href="Relatórios.html">Relatórios</a>
+            <a href="Cadastro.html">Cadastro</a>
+        </nav>
+    </header>
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleLoginModal()">&times;</span>
+            <h2>Login</h2>
+            <form action="login.html" method="post">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <section id="relatorios">
+        <h2>Produtos Cadastrados</h2>
+        <table id="tabela-produtos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Descrição</th>
+                    <th>Imagem</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-produtos"></tbody>
+        </table>
+    </section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p><ol> Telefone:(41) 4002-8922</ol></p>
+        <p><ol> E-mail: centaurocontato@gmail.com</ol></p>
+        <p><ol> Instagram: @centauro_oficial</ol></p>
+        <p><ol>&copy; 2024 Centauro. Todos os direitos reservados.</ol></p>
+    </footer>
+<script src="script.js"></script>
+<script src="ScriptRelatório.js"></script>
+</body>
+
+</html>

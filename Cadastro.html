@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       <header>
+    <!-- Contêiner flexível para o header -->
+    <div class="header-container">
+        <!-- Ícone do menu de hambúrguer -->
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+
+        <!-- Título centralizado -->
+        <h1 class="header-title">Cadastro de Produto</h1>
+
+        <!-- Botão de Login à direita -->
+        <button class="login-button" onclick="toggleLoginModal()">Login</button>
+    </div>
+    
+    <!-- Menu de navegação -->
+    <nav class="menu">
+        <a href="index.html">Menu</a>
+        <a href="Relatórios.html">Relatórios</a>
+        <a href="Cadastro.html">Cadastro</a>
+    </nav>
+</header>
+        <!-- Modal de Login -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="toggleLoginModal()">&times;</span>
+                <h2>Login</h2>
+                <form action="login.html" method="post">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section id="cadastro" class="cadastro">
+        <h2 class="lista_titulo">Adicionar Novo Produto:</h2>
+        <form id="form-cadastro" onsubmit="cadastrarProduto(event)">
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" id="nome" required>
+
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" required>
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" required></textarea>
+
+            <label for="imagem">URL da Imagem:</label>
+            <input type="text" id="imagem" required>
+
+            <button type="submit">Cadastrar Produto</button>
+        </form>
+        
+        <div id="produtos-cadastrados">
+            <h3 class="lista_titulo">Produtos Cadastrados:</h3>
+            <ul class="lista_IMG" id="lista-produtos"></ul>
+        </div>
+    </section>
+
+    <footer>
+        <p><ol> Telefone:(41) 4002-8922</ol></p>
+        <p><ol> E-mail: centaurocontato@gmail.com</ol></p>
+        <p><ol> Instagram: @centauro_oficial</ol></p>
+        <p><ol>&copy; 2024 Centauro. Todos os direitos reservados.</ol></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
